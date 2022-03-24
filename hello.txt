@@ -1,2 +1,26 @@
 1.Hello world!
 2.line 2
+3. this is new branch
+ int favorite number = 69;
+ int guess;
+
+do
+{
+ 	console.Write("which one is my favorite number?");
+	guess = Convert.Toint32(Console.Readline());
+
+	if (guess < favorite number)
+	{
+	Console.Write("もっとmotto");
+	}
+	eles if (guess > favorite number)
+	{
+	Console.Write("以下lka");
+	}
+	else
+	{
+	Console.Write("よくできた");
+	}
+}
+while(guess != favorite number)
+
