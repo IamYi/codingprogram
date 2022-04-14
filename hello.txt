@@ -1,4 +1,44 @@
-1.Hello world!
-2.line 2
-3. this is new branch
+string? food = "radtea";
+System.Console.WriteLine("We have redtea, buddatea and coffee. Which one would you like to order?");
+System.Console.WriteLine("Typr \"radom\" for random recommendation");
+
+food = Console.ReadLine();
+
+if (food == "random")
+{
+    Random random = new Random();
+    int i = random.Next(0,3);
+    switch(i)
+    {
+        case 0:
+        food = "redtea";
+        System.Console.WriteLine("You have to try our redtea!");
+        break;
+        case 1:
+        food = "buddatea";
+        System.Console.WriteLine("You have to try our buddatea!");
+        break;
+        case 2:
+        food = "coffee";
+        System.Console.WriteLine("You have to try our coffee!");
+        break;
+    }
+    Console.WriteLine("Random recommendation:" + food + ".");
+}
+
+switch (food)
+{
+    case "redtea":
+    Console.WriteLine("It will cost you $50.");
+    break;
+    case "buddatea":
+    Console.WriteLine("It will cost you $60.");
+    break;
+    case "coffee":
+    Console.WriteLine("It will cost you $100.");
+    break;
+    default:
+    Console.WriteLine("Sorry, we did't sell" + food + ".");
+    break;
+}
 
